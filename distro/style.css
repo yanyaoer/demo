@@ -1,0 +1,121 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=gbk: */
+/* css reset {{{ */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; } body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, Helvetica, "Î¢ÈíÑÅºÚ", "Hiragino Sans GB", \5b8b\4f53, sans-serif; } h1, h2, h3, h4, h5, h6 { font-size: 100%; } address, cite, dfn, em, var { font-style: normal; } code, kbd, pre, samp { font-family: monaco, 'courier new', 'bitstream vera sans mono', courier, monospace; } small { font-size: 12px; } ul, ol { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: underline; } fieldset, img { border: 0; } img { vertical-align: middle; } button, input, select, textarea { font-size: 100%; } table { border-collapse: collapse; border-spacing: 0; }
+
+/* }}} css reset */
+
+body { background: #cdd2e2 url(img/header.png) repeat-x 0 0; min-width:960px;}
+a {color:#06d;}
+h2 {font-size:16px;}
+.hidden {display:none;}
+/* textarea */
+.ta {border:1px solid #fff; width:100%; height:10em; padding:2px; background:url(img/ta.png) 0 0 no-repeat;
+    -moz-box-shadow:inset 0 0 5px rgba(0,0,0, .5);
+    -webkit-box-shadow:inset 0 0 5px inset rgba(0,0,0, .5);
+    box-shadow:inset 0 0 5px inset rgba(0,0,0, .5);
+} 
+
+.wrapper {width:960px; background: url(img/body.png) 50% 0 repeat-y; margin:0 auto; padding:10px 0; position:relative;}
+.header {height:58px; width:960px; margin:0 auto;}
+.header img {vertical-align:top;}
+
+.list-container:after,
+.wrapper:after { content: '\0020'; display: block; height: 0; clear: both; }
+.list-container,
+.wrapper {_zoom:1;}
+
+.column {float:left;}
+.storage {width:215px;}
+.histroy {width:300px;}
+.record {width:420px;margin:0 5px;}
+
+/* record {{{ */
+.record {overflow:hidden;}
+.list-container {width:860px; position:relative;}
+.list {width:420px; float:left;}
+
+.record h2 {border-bottom:1px solid #ccc; margin:0 10px; overflow:hidden;}
+.record h2 .pipe {margin:0 10px; font-weight:normal; color:#ccc;}
+.record h2 a {display:inline-block;padding:5px 0 5px 40px; background-position:0 0; background-repeat:no-repeat; color:#ccc;}
+.record h2 a:hover {text-decoration:none;}
+.record h2 .active {color:#5a5d63;}
+.record h2 .entry {background-image:url(img/entry.png)}
+.record h2 .egress {background-image:url(img/egress.png)}
+.list li {margin:10px; border:1px solid #bbb; color:#909090;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.list h3 {color:#444; background-color:#ffe9d0; padding:3px 10px 3px 30px; background-image:url(img/ticket.png); background-position: 10px 3px; background-repeat: no-repeat;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+}
+.list li .desc {padding:3px 10px;}
+.list .desc span {display:inline-block; width:170px;}
+.list .operator {padding-left:20px; background:url(img/operator.png) 0 0 no-repeat;}
+.list .date {padding-left:20px; background:url(img/date.png) 0 2px no-repeat;}
+.list .detail .detail-label {padding-left:20px; background:url(img/detail.png) 0 0 no-repeat;}
+.list li .detail {padding:3px 10px 10px;}
+.list li .full {background:#fff7f0; border-top:1px solid #ffe9d0;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+}
+.detail .more {text-align:right; margin-left:5px;}
+
+.list .color h3 {background-color:#d1e2ff;}
+.list .color .full {background-color:#f0f5ff; border-top-color:#d1e2ff;}
+/* record }}} */
+
+/* storage {{{ */
+.storage h2,
+.storage li {margin:0 15px; color:#5a5d63;}
+.storage h2 {border-bottom:1px solid #a0a4b0; padding:5px 40px; margin-bottom:5px; background:url(img/storage.png) 0 0 no-repeat;}
+.storage span {display:inline-block; width:50%;}
+.storage .number {text-align:right;}
+/* storage }}} *
+
+/* histroy {{{ */
+.histroy {color:#5a5d63; padding-left:15px;}
+.histroy h2 {border-bottom:1px solid #a0a4b0; padding:5px 40px; margin-bottom:5px; background:url(img/histroy.png) 0 0 no-repeat; }
+.histroy li {line-height:20px;padding-left:20px; background-repeat:no-repeat; background-position:0 2px; border-bottom:1px solid #bbb;}
+.histroy .add {background-image:url(img/histroy-add.png);}
+.view-histroy .add{ border-bottom-color:#a5ba2d;}
+.histroy .rm {background-image:url(img/histroy-rm.png);}
+.view-histroy .rm{border-bottom-color:#8c3506;}
+.histroy .disable {background-image:url(img/histroy-disable.png);border-bottom-width:2px;}
+.view-histroy .disable {border-bottom-color:#f00;}
+/* histroy }}} */
+
+.detail-table {width:375px;margin:10px 0 0;}
+    .detail-table th,
+    .detail-table td {padding:2px 5px; text-shadow: -1px 1px #fff;}
+    .detail-table th {text-align:left; border-bottom:1px solid #c9c9c9; font-weight:normal; color:#666;}
+    .detail-table .normal {color:#2f2;}
+    .detail-table .error {color:#f22;}
+
+/* dialog {{{*/
+.dialog {position:absolute; left:150px; top:55px; color:#c9c9c9; background-color:rgba(0,0,0, .8);text-shadow:1px 2px #000;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.egress {left:280px;}
+.dialog h3 {cursor:move; color:#c9c9c9; background-color:rgba(0,0,0, .8);
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.dialog h3 b{color:rgba(0,0,0, .8); position:absolute; top:-14px; left:140px;}
+.dialog .desc {padding:3px 0 3px 10px;}
+.dialog .detail {padding:3px 10px 10px;}
+.dialog .detail-table th {background-color:#000;color:#eee; border-bottom-color:#444;}
+.dialog .detail-table th,
+.dialog .detail-table td { text-shadow:1px 2px #000;}
+.dialog .act {text-align:right;padding:10px 10px 0 0;}
+.dialog .act button {padding:5px 10px;cursor:pointer;}
+/* dialog }}}*/
+
+
+/* git test*/
