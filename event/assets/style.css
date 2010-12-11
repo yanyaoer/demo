@@ -1,0 +1,59 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=gbk: */
+/* css reset {{{ */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; } body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, Helvetica, "Î¢ÈíÑÅºÚ", "Hiragino Sans GB", \5b8b\4f53, sans-serif; } h1, h2, h3, h4, h5, h6 { font-size: 100%; } address, cite, dfn, em, var { font-style: normal; } code, kbd, pre, samp { font-family: monaco, 'courier new', 'bitstream vera sans mono', courier, monospace; } small { font-size: 12px; } ul, ol { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: underline; } fieldset, img { border: 0; } img { vertical-align: middle; } button, input, select, textarea { font-size: 100%; } table { border-collapse: collapse; border-spacing: 0; }
+
+/* }}} css reset */
+
+/* fix clear */
+.special .hd:after, 
+#footer:after,
+.clear:after {
+    clear:both; content:" "; display:block; height:0;
+}
+.special .hd,
+#after,
+.clear {_zoom:1;}
+
+body {background:#fff; color:#666; min-width:960px;}
+#wrapper {background:#f1f1f1 url(http://res.hyzing.com/res/img/intro/top.png) repeat-x 0 0;}
+#content {margin:0 20px;}
+a, a:active {color:#4dadeb;cursor:pointer;}
+
+#header {margin: 0 20px;}
+#header h1 {float:left; margin-left:-20px;}
+.user-setting {float:right; margin-top:35px; color:#bbb;}
+.global-nav {clear:both; color:#fff; padding:5px 0;position:relative;}
+.global-nav a {color:#fff;}
+.global-nav .pipe {margin:0 10px;}
+.global-group {position:absolute; right:0; top:5px;}
+
+.crumb {padding:10px 0;}
+
+.box {padding:10px; background:#fff; border:1px solid #ddd;}
+.special {border:5px solid #4dadeb; padding:0;
+	-moz-box-shadow:0 0 5px #666;
+	-webkit-box-shadow:0 0 5px #666;
+	box-shadow:0 0 5px #666;
+}
+.special .hd {background:#ccebff; border-bottom:1px solid #4dadeb; padding:2px 10px;}
+.special .bd {}
+.hd .add {float:left;}
+.hd .filter {float:right;}
+
+table {width:100%;}
+table td,
+table th {padding:8px 10px;}
+table .pipe {margin:0 1em;}
+table .color {background:#f2faff;}
+
+.group-list th{text-align:left;}
+.group-list .opt {width:295px;}
+
+
+.pagination {text-align:right;}
+
+#footer {border-top:1px solid #ddd; background:#fff; padding:10px; margin-top:50px;}
+#footer ul {overflow:hidden;float:left;}
+#footer ul li {float:left;margin-left:-1px; margin-right:10px; padding-left:10px; border-left:1px solid #ddd;}
+#footer .powerby {float:right;}
