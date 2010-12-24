@@ -1,365 +1,40 @@
+<!DOCTYPE HTML>
 <html>
-   <head>
-   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta http-equiv="refresh" content="600">       
-   <title>2010年全国泛在网与物联网技术标准研讨会</title>
-   <script src="js/jquery-1.4.2.min.js"></script>
-   <script src="js/welcome.js"></script>
-    <style>
-		/* css reset {{{ */
+	<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="refresh" content="600">       
+	<title>2010年全国泛在网与物联网技术标准研讨会</title>
+	<link href='style.css' rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.4.2.min.js"></script>
+	<script src="js/welcome.js"></script>
+	</head>
+	<body>
+	<h1 id="header">mit efc</h1>
 
-        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
-        dl, dt, dd, ul, ol, li,
-        pre,
-        form, fieldset, legend, button, input, textarea,
-        th, td {
-            margin: 0;
-            padding: 0;
-        }
+	<div id="container">
+		<div class="main">
+			<h2 class="vip">welcome<span class="info"><strong class="name" id="vipName">June Chang</strong><span class="company" id="vipCompany">Hyzing LLc<br />CEO</span></span> to this event!</h2>
+			<p class="quee">username, username, username, username, username,</p>
+			<p class="number">
+				We Has 
+				<span id="company_count">89</span>
+				Organizations,    
+				<span id="user_count">64</span>
+				Participants
+			</p>
 
-        body,
-        button, input, select, textarea {
-            font: 30px/1.5 tahoma, arial, Helvetica, "微软雅黑", "Hiragino Sans GB", \5b8b\4f53, sans-serif;
-        }
+			<p class="title"><span>first-visit</span><span>last-visit</span></p>
+		</div>
 
-        h1, h2, h3, h4, h5, h6 {
-            font-size: 100%;
-        }
-
-        address, cite, dfn, em, var {
-            font-style: normal;
-        }
-
-        code, kbd, pre, samp {
-            font-family: monaco, 'courier new', 'bitstream vera sans mono', courier, monospace;
-        }
-
-        small {
-            font-size: 12px;
-        }
-
-        ul, ol {
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        fieldset, img {
-            border: 0;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        button, input, select, textarea {
-            font-size: 100%;
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        /* }}} css reset */
-
-        body {
-            background: #87d0f3 url(img/body-bg.png) repeat-x 0 0;
-            overflow: hidden;
-        }
-
-        #header {
-            background: url(img/header-bg-small.png) no-repeat 50% 0;
-            width: 1006px;
-            height: 205px;
-            margin: 0 auto;
-            text-indent: -20em;
-            overflow: hidden;
-        }
-
-        #container {
-            background: url(img/container-bg.png) repeat-y 50% 0;
-            width: 992px;
-            padding: 0 10px 2px;
-            margin: 0 auto;
-        }
-
-        #footer {
-            width: 994px;
-            margin: 0 auto;
-            font-size: 16px;
-            line-height: 32px;
-            border-top: 1px solid #1d647f;
-            text-align: right;
-            padding-right: 10px;
-            color: #000;
-            font-weight: bold;
-        }
-
-        .vip {
-            background: #a6e9ff;
-            font-size: 30px;
-            color: #ff8278;
-            line-height: 100%;
-            text-align: center;
-            padding-bottom: 40px;
-        }
-
-        .vip .info {
-            display: inline-block;
-            color: #177a9b;
-            font-size: 20px;
-            text-align: left;
-            position: relative;
-            top: 20px;
-            margin: 0 1em;
-            vertical-align: bottom;
-        }
-
-        .vip .info .name {
-            color: #0c69ae;
-            font-size: 65px;
-            line-height: 65px;
-            font-weight: bold;
-            display: block;
-        }
-
-        .vip .info .honor {
-            display: block;
-            height: 20px;
-            position: absolute;
-            bottom: -30px;
-            left: 0;
-        }
-
-        .vip .info .company {
-            display: block;
-            height: 20px
-        }
-
-        .vip small {
-            display: inline-block;
-            line-height: 14px;
-            background: #fff;
-            padding: 0 5px;
-            position: absolute;
-            right: 15px;
-            top: 13px;
-            font-weight: bold;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-        }
-
-        .vip small i {
-            background: #999;
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            margin: 2px 2px 4px;
-            -moz-border-radius: 4px;
-            -webkit-border-radius: 4px;
-
-        }
-
-        .number {
-            background: #545454 url(img/num-bg.png) no-repeat 0 0;
-            color: #fff;
-            position: relative;
-            left: -5px;
-            width: 997px;
-            text-indent: 35px;
-        }
-
-        .number .corner {
-            width: 10px;
-            height: 55px;
-            background: url(img/num-bg.png) no-repeat 0 0;
-            position: absolute;
-            left: -10px;
-            top: 0;
-        }
-
-        .title {
-            text-align: right;
-            font-size: 14px;
-            color: #000;
-            background: #a6e9ff;
-            -moz-border-radius: 0 0 5px 5px;
-            -webkit-border-radius: 0 0 5px 5px;
-        }
-
-        .title span {
-            display: inline-block;
-            width: 155px;
-            text-align: center;
-        }
-
-        #marquee {
-            padding: 5px 0 0;
-            margin-bottom: 2px;
-        }
-
-        #marquee .vip {
-            padding: 0 310px 0 30px;
-            text-align: left;
-            font-size: 20px;
-            margin-bottom: 5px;
-            position: relative;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-        }
-
-        #marquee .vip * {
-            vertical-align: middle;
-        }
-
-        #marquee .name {
-            font-size: 30px;
-            line-height: 42px;
-        }
-
-        #marquee .info {
-            font-size: 20px;
-            vertical-align: baseline;
-        }
-
-        #marquee .info .name,
-        #marquee .info .honor,
-        #marquee .info {
-            display: inline;
-            position: static;
-            margin: 0 10px;
-        }
-
-        .users {
-            width: 100%;
-            table-layout: fixed;
-            border-top: 2px solid #eee;
-            border-right: 2px solid #eee;
-            margin: 5px 0;
-        }
-
-        .users th,
-        .users td {
-            border-bottom: 2px solid #eee;
-            border-left: 2px solid #eee;
-            font-size: 20px;
-        }
-
-        .users td {
-            padding: 3px 10px;
-            font-size: 16px;
-            color: #404040;
-        }
-
-        .users th {
-            letter-spacing: 1em;
-            color: #aaa;
-        }
-
-        .users .honor {
-            width: 10em;
-        }
-
-        .users .name {
-            width: 6em;
-        }
-
-        .users .time {
-            width: 8em;
-            letter-spacing: 10px;
-        }
-
-        .users td.time {
-            letter-spacing: 0;
-            font-size: 14px;
-        }
-
-        #footer img {
-            vertical-align: middle;
-        }
-
-        #user_count,
-        #company_count {
-            color: red;
-        }
-
-        .quee {
-            text-align: center;
-            color: #0c69ae;
-            padding: 15px 0 5px;
-            background: #fff url(img/member-list.png) repeat-x 0 0;
-            text-shadow: 0 -1px 1px #fff, 1px 0 1px #666, 0 0 5px rgba(0, 0, 0, .3);
-        }
-
-        .inline-ad {background-position:50% 50%; background-repeat:no-repeat; display:none;}
-        .ad {
-            position: absolute;
-            top: 185px;
-            width: 160px;
-            height: 400px;
-            overflow: hidden;
-            text-align: center;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-        }
-
-        .ad img {
-            width: 160px;
-            height: 400px;
-        }
-
-        .left {
-            left: 0;
-        }
-
-        .right {
-            right: 0;
-        }
-   
-   </style>
-   </head>
-   <body><!-- onload="showUser()" -->
-   <h1 id="header">2010年全国泛在网与物联网技术标准研讨会</h1>
-
-   <div id="container">
-       <h2 class="vip">欢迎<span class="info"><strong class="name" id="vipName" >各位嘉宾</strong><span class="company" id="vipCompany">单位 + 职称</span></span>参观海震科技</h2>
-	   <p class="quee">username, username, 中文, username, username, username,</p>
-	   <!-- 需要展示广告时插入下行 -->
-	   <div class="inline-ad" style="background-image:url(img/ad/hze.png)"><img src="img/ad-frame-cover.png" /></div>
-       <p class="number"> 本次活动已有<span id="company_count"> </span>个单位组织, <span id="user_count" ></span> 人参与<b class="corner"></b></p>
-
-	   <p class="title"><span>初次来访</span><span>最近来访</span></p>
-       <ul id="marquee">
-	   <li class="vip">欢迎<span class="info"><strong class="name">" + user na me"</strong>" + company + "<span class="honor">" + titleName + "</span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
-	   <li class="vip">欢迎<span class="info"><strong class="name">" + username + "</strong>" + company + "<span class="honor">" + titleName  </span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
-	   <li class="vip">欢迎<span class="info"><strong class="name">" + username + "</strong>" + company + "<span class="honor">" + titleName  </span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
-       </ul>
-   </div>
-
-   <p id="footer"><img src="img/hz-logo.png" /> 海震智能会议管理 提供强力驱动</p>
-   <div class="ad left">
-		<ul>
-			<li><img src="img/ad/04.gif" /></li>
-			<li><img src="img/ad/01.png" /></li>
-			<li><img src="img/ad/02.png" /></li>
-			<li><img src="img/ad/03.png" /></li>
+		<ul id="marquee">
+			<li class="vip">welcome <span class="info"><strong class="name">Milo Qian</strong> <span class="company">( hyzing.com - java devloper )</span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
+			<li class="vip">welcome <span class="info"><strong class="name">Milo Qian</strong> <span class="company">( hyzing.com - java devloper )</span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
+			<li class="vip">welcome <span class="info"><strong class="name">Milo Qian</strong> <span class="company">( hyzing.com - java devloper )</span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
+			<li class="vip">welcome <span class="info"><strong class="name">Milo Qian</strong> <span class="company">( hyzing.com - java devloper )</span></span><small> 2008-10-13 09:08:10 <i></i> 2008-10-13 09:08:10 </small></li>
 		</ul>
-   </div>
-   <div class="ad right">
-		<ul>
-			<li><img src="img/ad/test.gif" /></li>
-			<li><img src="img/ad/01.png" /></li>
-			<li><img src="img/ad/02.png" /></li>
-			<li><img src="img/ad/03.png" /></li>
-		</ul>
-   </div>
+	</div>
+
+	<p id="footer"><img src="img/hz-logo.png" /> power by hyzing.com</p>
    <script type="text/javascript">
    (function($) {
   $.fn.fadeIterator = function(settings, noAnimate) {
