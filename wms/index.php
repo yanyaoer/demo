@@ -16,7 +16,7 @@
 		   	?>
 			<div id="main" class="page-<?php util::getPageName() ?>">
 				<?php 
-				if($_GET['p']=='form') {
+				if($_GET && $_GET['p']=='form') {
 					TPL::pageForm();
 				}else {
 					TPL::pageList();

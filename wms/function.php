@@ -2,7 +2,7 @@
 
 class util {
 	public static function getPageName() {
-		echo $_GET['p']?$_GET['p']:'list'; 
+		echo ($_GET && $_GET['p'])?$_GET['p']:'list'; 
 	}
 }
 
@@ -94,6 +94,7 @@ class TPL {
 		</div>';
 	}
 	public static function listView($leng=20){
+		$tbody = '';
 		for($i=0; $i<$leng; $i++) {
 			$tbody .= '<tr><td class="sel"><input type="checkbox" class="J_sel_'.$i.'" /></td><td class="id">'.$i.'</td><td>衣服'.$i.'件</td><td><a href="#edit">修改</a><span class="pipe">|</span><a href="#del">删除</a></td></tr>';
 		}
