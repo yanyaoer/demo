@@ -98,7 +98,7 @@ class TPL {
 		for($i=0; $i<$leng; $i++) {
 			$tbody .= '<tr><td class="sel"><input type="checkbox" class="J_sel_'.$i.'" /></td><td class="id">'.$i.'</td><td>衣服'.$i.'件</td><td><a href="#edit">修改</a><span class="pipe">|</span><a href="#del">删除</a></td></tr>';
 		}
-		$thead = '<thead><tr><td colspan="2" class="id">id</td><td>描述</td><td class="opt">操作</td></tr></thead>';
+		$thead = '<thead><tr><th colspan="2" class="id">id</th><th>描述</th><th class="opt">操作</th></tr></thead>';
 		$opt = '<tr class="batch"><td colspan="4"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></td></tr>';
 		$page = '<div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div>';
 		$ret='<table class="nt sample-list">'.$thead.$opt.$tbody.'</table>';
