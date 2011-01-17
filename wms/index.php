@@ -14,16 +14,7 @@
 		   		TPL::header();
 				TPL::sidebar();
 		   	?>
-			<div id="main" class="page-<?php util::getPageName() ?>">
-				<?php 
-				if($_GET && $_GET['p']=='form') {
-					TPL::pageForm();
-				}else {
-					TPL::pageList();
-				}
-				?>
-			</div>
-
+			<iframe id="J_frame" src="frame.php?p=list" frameborder="0" scrolling="no" />
 		</div>
 	</body>
 </html>

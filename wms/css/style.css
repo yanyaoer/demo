@@ -4,7 +4,8 @@
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; } body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, Helvetica, "wqy", "微软雅黑", "Hiragino Sans GB", \5b8b\4f53, sans-serif; } h1, h2, h3, h4, h5, h6 { font-size: 100%; } address, cite, dfn, em, var { font-style: normal; } code, kbd, pre, samp { font-family: monaco, 'courier new', 'bitstream vera sans mono', courier, monospace; } small { font-size: 12px; } ul, ol { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: underline; } fieldset, img { border: 0; } img { vertical-align: middle; } button, input, select, textarea { font-size: 100%; } table { border-collapse: collapse; border-spacing: 0; }
 
 /* }}} css reset */
-body {overflow-y:scroll; border-left:180px solid #efeded;height:100%; background:url(../img/main-bg.png) repeat 0 0;}
+body {overflow-y:scroll; border-left:181px solid #efeded;height:100%; background:url(../img/main-bg.png) repeat 0 0;}
+body.frame {background:transparent;border-left:0 none;}
 a {color:#39c;}
 a:hover {text-decoration:none; color:#6c4;}
 :focus {outline: 0 none;}
@@ -17,10 +18,11 @@ a:hover {text-decoration:none; color:#6c4;}
 #header {height:65px;background:url(../img/header-bg.png) repeat-x 0 0;box-shadow:0 0 5px rgba(0,0,0,.8);}
 #logo {float:left;margin-left:-180px;}
 
+#J_frame {width:100%;}
 #main {padding:10px 20px;}
 
 /* sidebar {{{ */
-    #side {width:180px; float:left; margin-left:-180px; text-indent:1em;border-right:1px solid #ccc;}
+    #side {width:180px; float:left; margin-left:-181px; text-indent:1em;border-right:1px solid #ccc;}
     #side dt {height:21px;line-height:21px;background:url(../img/menu-bg.png) no-repeat 0 0; color:#aaa; cursor:pointer;}
     #side,
     #side dd.actived {margin-bottom:5px; border-bottom:1px solid #a7a7a7;box-shadow:0 1px 0 #ccc;}
@@ -60,3 +62,9 @@ textarea, input[type=text], input[type=password], input.text { padding: 2px; }
 .sample-list .opt,
 .sample-list .id {width:100px;}
 .sample-list .batch {background:#f7f7f7;}
+
+.page-num {background:#eee;border-top:1px solid #dcdcdc; height:30px; line-height:30px; text-align:right; padding-right:1em;}
+.page-num a,
+.page-num span {padding:0 5px; margin:0 5px;}
+.page-num a {border:1px solid #ccc; background:#fff;}
+.page-num a:hover {color:#fff; background:#08c; border-color:#39c;}

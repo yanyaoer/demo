@@ -100,8 +100,9 @@ class TPL {
 		}
 		$thead = '<thead><tr><td colspan="2" class="id">id</td><td>描述</td><td class="opt">操作</td></tr></thead>';
 		$opt = '<tr class="batch"><td colspan="4"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></td></tr>';
+		$page = '<div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div>';
 		$ret='<table class="nt sample-list">'.$thead.$opt.$tbody.'</table>';
-		echo $ret;
+		echo $ret.$page;
 	}
 	public function pageList()
 	{
