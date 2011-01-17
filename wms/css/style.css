@@ -1,0 +1,62 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8: */
+/* css reset {{{ */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; } body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, Helvetica, "wqy", "微软雅黑", "Hiragino Sans GB", \5b8b\4f53, sans-serif; } h1, h2, h3, h4, h5, h6 { font-size: 100%; } address, cite, dfn, em, var { font-style: normal; } code, kbd, pre, samp { font-family: monaco, 'courier new', 'bitstream vera sans mono', courier, monospace; } small { font-size: 12px; } ul, ol { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: underline; } fieldset, img { border: 0; } img { vertical-align: middle; } button, input, select, textarea { font-size: 100%; } table { border-collapse: collapse; border-spacing: 0; }
+
+/* }}} css reset */
+body {overflow-y:scroll; border-left:180px solid #efeded;height:100%; background:url(../img/main-bg.png) repeat 0 0;}
+a {color:#39c;}
+a:hover {text-decoration:none; color:#6c4;}
+:focus {outline: 0 none;}
+
+
+
+.hidden {display:none;}
+.pipe {margin:0 10px;color:#ccc;}
+
+#header {height:65px;background:url(../img/header-bg.png) repeat-x 0 0;box-shadow:0 0 5px rgba(0,0,0,.8);}
+#logo {float:left;margin-left:-180px;}
+
+#main {padding:10px 20px;}
+
+/* sidebar {{{ */
+    #side {width:180px; float:left; margin-left:-180px; text-indent:1em;border-right:1px solid #ccc;}
+    #side dt {height:21px;line-height:21px;background:url(../img/menu-bg.png) no-repeat 0 0; color:#aaa; cursor:pointer;}
+    #side,
+    #side dd.actived {margin-bottom:5px; border-bottom:1px solid #a7a7a7;box-shadow:0 1px 0 #ccc;}
+    #side dd a {height:21px;line-height:21px;display:block;background-color:#fff; color:#1b1b1b;}
+    #side dd a:hover,
+    #side dd a.actived {color:#fff; background:url(../img/item-bg.png) no-repeat 0 0;}
+
+/* }}} */
+
+.page-form .box {margin-top:10px; width:100%; background:#fff; border-radius:10px; box-shadow:0 0 5px #aaa;}
+.page-form .box .hd {margin:0 40px; padding:10px 40px;font-size:20px; border-bottom:1px solid #ccc;}
+.page-form .box .bd {padding:20px 80px 80px;}
+.page-form label {display:block;margin-top:1em; font-size:16px;}
+.page-form textarea {width:80%; margin-top:1em; height:25em; border-radius:3px;}
+.page-form input {width:250px;height:32px; line-height:32px; border:1px solid #8c8c8c; border-radius:3px; box-shadow:0 0 2px #fff; padding:5px; font-size:18px;}
+.page-form input:focus,
+.page-form select:focus, 
+.page-form textarea:focus {
+    box-shadow: 0 0 5px #cef;
+    border-color:#08c;
+    background-color:#eff;
+    /* box-shadow: 0 0 5px #c46; */
+} 
+textarea, input[type=text], input[type=password], input.text { padding: 2px; }
+.page-form button {border:1px solid #8b8b8b; border-radius:3px; padding:0 20px; font-size:20px; color:#666; background:url(../img/btn.png) repeat-x 0 100%; margin-right:10px;}
+.page-form button[type=submit] {color:#fff; background-position: 0 0; border-color:#009430; text-shadow:0 -1px #666;}
+.page-form .act {margin-top:1em;}
+
+.crumb {background:rgba(0,0,0, .2); border-radius:5px; height:32px; line-height:32px; padding-left:10px;margin-top:5px;}
+
+.nt {width:100%;}
+.page-list .box {margin-top:10px; background:#fff; border-radius:5px; overflow:hidden; box-shadow:0 0 5px rgba(0,0,0, .5);}
+.nt td {border-right:1px solid #eee; border-bottom:1px solid #eee;line-height:30px;padding:0 1em}
+.nt thead td {background:#e4e4e4 url(../img/thead-bg.png) repeat-x 0 0; border-width:1px; border-style:solid; border-color:#fff #bbb #bbb #fff;}
+
+.sample-list .sel {width:15px;}
+.sample-list .opt,
+.sample-list .id {width:100px;}
+.sample-list .batch {background:#f7f7f7;}
