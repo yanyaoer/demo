@@ -70,7 +70,7 @@ class TPL {
 			}
 			$formContent .= '<p><label>'.$type.'</label><input class="ipt" placeholder="'.$type.'" type="'.$type.'"'.$required.$autofocus.' /></p>';
 		}
-		$ret = '<form>'.$formContent.'<p><textarea class="ta"></textarea></p><p class="act"><button type="submit">确认</button><button type="cancel">取消</button></p></form>';
+		$ret = '<form>'.$formContent.'<p><label>内容</label><textarea class="ta"></textarea></p><p class="act"><button type="submit">确认</button><button type="cancel">取消</button></p></form>';
 		echo $ret;
 	}
 
@@ -98,9 +98,10 @@ class TPL {
 		for($i=0; $i<$leng; $i++) {
 			$tbody .= '<tr><td class="sel"><input type="checkbox" class="J_sel_'.$i.'" /></td><td class="id">'.$i.'</td><td>衣服'.$i.'件</td><td><a href="#edit">修改</a><span class="pipe">|</span><a href="#del">删除</a></td></tr>';
 		}
-		$thead = '<thead><tr><th colspan="2" class="id">id</th><th>描述</th><th class="opt">操作</th></tr></thead>';
-		$opt = '<tr class="batch"><td colspan="4"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></td></tr>';
-		$page = '<div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div>';
+		$thead = '<thead><tr><th class="sel no-border"></td><th class="id">id</th><th>描述</th><th class="opt">操作</th></tr></thead>';
+		$searchform = '<form class="search"><input type="text" placeholder="可以搜索标题, id, 描述" /><button type="submit">搜索</button></form>';
+		$opt = '<tr class="action"><td colspan="4"><span class="batch"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span>'.$searchform.'</td></tr>';
+		$page = '<div class="tfoot"><span class="batch"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span><div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div></div>';
 		$ret='<table class="nt sample-list">'.$thead.$opt.$tbody.'</table>';
 		echo $ret.$page;
 	}

@@ -35,7 +35,8 @@ a:hover {text-decoration:none; color:#6c4;}
 .page-form .box {margin-top:10px; width:100%; background:#fff; border-radius:10px; box-shadow:0 0 5px #aaa;}
 .page-form .box .hd {margin:0 40px; padding:10px 40px;font-size:20px; border-bottom:1px solid #ccc;}
 .page-form .box .bd {padding:20px 80px 80px;}
-.page-form label {display:block;margin-top:1em; font-size:16px;}
+.page-form p {margin-top:1em;}
+.page-form label {display:inline-block;margin-right:1em; font-size:16px; width:6em; vertical-align:top; line-height:36px;}
 .page-form textarea {width:80%; margin-top:1em; height:25em; border-radius:3px;}
 .page-form input {width:250px;height:32px; line-height:32px; border:1px solid #8c8c8c; border-radius:3px; box-shadow:0 0 2px #fff; padding:5px; font-size:18px;}
 .page-form input:focus,
@@ -47,9 +48,10 @@ a:hover {text-decoration:none; color:#6c4;}
     /* box-shadow: 0 0 5px #c46; */
 } 
 textarea, input[type=text], input[type=password], input.text { padding: 2px; }
+button {border:1px solid #8b8b8b; border-radius:3px; padding:0 10px; color:#666; background:url(../img/btn.png) repeat-x 0 100%;}
 .page-form button {border:1px solid #8b8b8b; border-radius:3px; padding:0 20px; font-size:20px; color:#666; background:url(../img/btn.png) repeat-x 0 100%; margin-right:10px;}
 .page-form button[type=submit] {color:#fff; background-position: 0 0; border-color:#009430; text-shadow:0 -1px #666;}
-.page-form .act {margin-top:1em;}
+.page-form .act {padding-left:6em;}
 
 .crumb {background:rgba(0,0,0, .2); border-radius:5px; height:32px; line-height:32px; padding-left:10px;margin-top:5px;}
 
@@ -61,10 +63,17 @@ textarea, input[type=text], input[type=password], input.text { padding: 2px; }
 .sample-list .sel {width:15px;}
 .sample-list .opt,
 .sample-list .id {width:100px;}
-.sample-list .batch {background:#f7f7f7;}
+.sample-list .action {background:#f7f7f7;}
+.sample-list .batch {float:left;}
+.sample-list .search {float:right;}
+.sample-list .search button {color:#fff; background-position: 0 0; border-color:#009430; text-shadow:0 -1px #666; padding:2px 10px;margin-left:10px;}
 
-.page-num {background:#eee;border-top:1px solid #dcdcdc; height:30px; line-height:30px; text-align:right; padding-right:1em;}
+.tfoot {background:#eee;border-top:1px solid #dcdcdc; overflow:auto;}
+.tfoot .batch {float:left;padding-left:1em;line-height:30px;}
+.tfoot .page-num {float:right;}
+
+.page-num {height:30px; line-height:30px; text-align:right; padding-right:1em;}
 .page-num a,
-.page-num span {padding:0 5px; margin:0 5px;}
+.page-num span {padding:2px 5px; margin:0 5px;}
 .page-num a {border:1px solid #ccc; background:#fff;}
 .page-num a:hover {color:#fff; background:#08c; border-color:#39c;}
