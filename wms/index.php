@@ -8,7 +8,7 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/util.js"></script>
 	</head>
-	<body>
+	<body class="framework">
 		<div id="wrapper">
 			<?php
 		   		TPL::header();

@@ -100,9 +100,9 @@ class TPL {
 		}
 		$thead = '<thead><tr><th class="sel no-border"></td><th class="id">id</th><th>描述</th><th class="opt">操作</th></tr></thead>';
 		$searchform = '<form class="search"><input type="text" placeholder="可以搜索标题, id, 描述" /><button type="submit">搜索</button></form>';
-		$opt = '<tr class="action"><td colspan="4"><span class="batch"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span>'.$searchform.'</td></tr>';
-		$page = '<div class="tfoot"><span class="batch"><a href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span><div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div></div>';
-		$ret='<table class="nt sample-list">'.$thead.$opt.$tbody.'</table>';
+		$opt = '<div class="action"><td colspan="4"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span>'.$searchform.'</td></div>';
+		$page = '<div class="tfoot"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span><div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div></div>';
+		$ret=$opt.'<table class="nt sample-list">'.$thead.$tbody.'</table>';
 		echo $ret.$page;
 	}
 	public function pageList()

@@ -4,4 +4,13 @@ if (!util) var util = {};
     util.frameResize = function() {
         if (window.parent) window.parent.$('#J_frame').height($(document).height());
     }
+    util.batch = function(trigger, target, fn){
+        trigger.click(function(){
+            target.each(function(idx, el){
+                el.checked = 'checked'?'checked':'';
+            })
+            if (fn) fn();
+        })
+    
+    }
 })()
