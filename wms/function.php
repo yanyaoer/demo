@@ -96,12 +96,12 @@ class TPL {
 	public static function listView($leng=20){
 		$tbody = '';
 		for($i=0; $i<$leng; $i++) {
-			$tbody .= '<tr><td class="sel"><input type="checkbox" class="J_sel_'.$i.'" /></td><td class="id">'.$i.'</td><td>衣服'.$i.'件</td><td><a href="#edit">修改</a><span class="pipe">|</span><a href="#del">删除</a></td></tr>';
+			$tbody .= '<tr data-id="'.$i.'"><td class="sel"><input type="checkbox" class="J_sel_'.$i.'" /></td><td class="id">'.$i.'</td><td>衣服'.$i.'件</td><td><a href="#edit">修改</a><span class="pipe">|</span><a href="#del">删除</a></td></tr>';
 		}
 		$thead = '<thead><tr><th class="sel no-border"></td><th class="id">id</th><th>描述</th><th class="opt">操作</th></tr></thead>';
-		$searchform = '<form class="search"><input type="text" placeholder="可以搜索标题, id, 描述" /><button type="submit">搜索</button></form>';
-		$opt = '<div class="action"><td colspan="4"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span>'.$searchform.'</td></div>';
-		$page = '<div class="tfoot"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="act">删除已选</a></span><div class="page-num"><a class="prev">上页</a><a href="#1">1</a><span class="current">2</span><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div></div>';
+		$searchform = '<form class="search"><span>另一个输入框: <input type="text" /></span><span>选择: <select><option value="b">b</option><option value="a">a</option></select></span><span><input type="text" placeholder="可以搜索标题, id, 描述" /><button type="submit">搜索</button></span></form>';
+		$opt = '<div class="action"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="J_batch_del">删除已选</a></span>'.$searchform.'</div>';
+		$page = '<div class="tfoot"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,</a> <a href="#J_sel_del" class="J_batch_del">删除已选</a></span><div class="page-num"><span class="prev">上页</span><span class="current">2</span><a href="#1">1</a><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><span class="abbr">...</span><a class="next">下页</a></div></div>';
 		$ret=$opt.'<table class="nt sample-list">'.$thead.$tbody.'</table>';
 		echo $ret.$page;
 	}

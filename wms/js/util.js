@@ -7,7 +7,7 @@ if (!util) var util = {};
     util.batch = function(trigger, target, fn){
         trigger.click(function(){
             target.each(function(idx, el){
-                el.checked = 'checked'?'checked':'';
+                el.checked==true?el.checked=false:el.checked=true;
             })
             if (fn) fn();
         })
