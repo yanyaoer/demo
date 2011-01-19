@@ -70,7 +70,7 @@ button {border:1px solid #8b8b8b; border-radius:3px; padding:0 10px; color:#666;
 .nt thead th {line-height:30px; padding:0 1em;background:#e4e4e4 url(../img/thead-bg.png) repeat-x 0 0; border-width:1px; border-style:solid; border-color:#fff #bbb #bbb #fff; font-weight:normal; text-align:left;}
 
 .sample-list .sel {width:24px;}
-.sample-list .opt,
+.sample-list .opt {width:180px;}
 .sample-list .id {width:100px;}
 .action {background:#f7f7f7; margin-top:3px;}
 .action .search {float:right; padding-right:10px;}
