@@ -31,6 +31,8 @@
 </div>
 					
 					';
+			}else if($_GET['p']=='detail') {
+				TPL::detail();
 			}else {
 				$_GET['p'] = 'list';
 				TPL::pageList();

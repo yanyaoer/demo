@@ -14,7 +14,7 @@
 		   		TPL::header();
 				TPL::sidebar();
 		   	?>
-			<iframe id="J_frame" src="frame.php?p=<?php echo ($_GET && $_GET['p']=='form')?'form':'list';?>" frameborder="0" scrolling="no" />
+			<iframe id="J_frame" src="frame.php?p=<?php echo ($_GET && $_GET['p'])?$_GET['p']:'list';?>" frameborder="0" scrolling="no" />
 		</div>
 	</body>
 </html>

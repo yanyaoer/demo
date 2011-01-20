@@ -35,11 +35,19 @@ a:hover {text-decoration:none; color:#6c4;}
 
 /* }}} */
 
+.page-detail .box,
 .page-form .box {margin-top:10px; width:100%; background:#fff; border-radius:10px; box-shadow:0 0 5px #aaa;}
+.page-detail .box .hd,
 .page-form .box .hd {margin:0 40px; padding:10px 40px;font-size:20px; border-bottom:1px solid #ccc;}
+.page-detail .box .bd,
 .page-form .box .bd {padding:20px 80px 80px;}
 .page-form p {margin-top:1em;}
 .page-form label {display:inline-block;margin-right:1em; font-size:16px; width:6em; vertical-align:top; line-height:36px;}
+
+.page-detail .p,
+.page-detail p {margin-top:1em;padding-left:7em; font-size:16px; display:block;}
+.page-detail .label {float:left; width:6em; margin-left:-6em;}
+
 .page-form textarea,
 input[type=text],
 input[type=password],
@@ -82,6 +90,7 @@ button {border:1px solid #8b8b8b; border-radius:3px; padding:0 10px; color:#666;
 .tfoot .page-num {float:right;}
 .action .batch ,
 .tfoot .batch {float:left;padding-left:1em;line-height:30px;}
+
 
 .page-num {height:30px; line-height:30px; text-align:right; padding-right:1em;}
 .page-num a,

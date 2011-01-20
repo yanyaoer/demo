@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+J	js/jquery.js	/^e(a[0],b):w}function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget);n=0;for(r=$/;"	f
+Qa	js/jquery.js	/^(function(A,w){function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j);return a}return i?$/;"	f
+TPL	function.php	/^class TPL {$/;"	c
+X	js/jquery.js	/^(function(A,w){function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j);return a}return i?$/;"	f
+Y	js/jquery.js	/^e(a[0],b):w}function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget);n=0;for(r=$/;"	f
+Z	js/jquery.js	/^e(a[0],b):w}function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget);n=0;for(r=$/;"	f
+act	function.php	/^				$act = ' actived';$/;"	v
+act	function.php	/^				$act = '';$/;"	v
+autofocus	function.php	/^					$autofocus = ' autofocus';$/;"	v
+c.fn.init	js/jquery.js	/^function(b,d){return a.call(b,d,b)}))},end:function(){return this.prevObject||c(null)},push:ba,sort:[].sort,splice:[].splice};c.fn.init.prototype=c.fn;c.extend=c.fn.extend=function(){var a=arguments[0]||{},b=1,d=arguments.length,f=false,e,j,i,o;if(typeof a==="boolean"){f=a;a=arguments[1]||{};b=2}if(typeof a!=="object"&&!c.isFunction(a))a={};if(d===b){a=this;--b}for(;b<d;b++)if((e=arguments[b])!=null)for(j in e){i=a[j];o=e[j];if(a!==o)if(f&&o&&(c.isPlainObject(o)||c.isArray(o))){i=i&&(c.isPlainObject(i)||$/;"	c
+detail	function.php	/^	public function detail() {$/;"	f
+formContent	function.php	/^		$formContent = '';$/;"	v
+frameResize	js/util.js	/^if (!util) var util = {};$/;"	f
+function.pa	js/jquery.js	/^j.length;n<r;n++)for(k=0;k<u.length;k++){i=u[k];if(j[n].selector===i.selector){o=j[n].elem;f=null;if(i.preType==="mouseenter"||i.preType==="mouseleave")f=c(a.relatedTarget).closest(i.selector)[0];if(!f||f!==o)d.push({elem:o,handleObj:i})}}n=0;for(r=d.length;n<r;n++){j=d[n];a.currentTarget=j.elem;a.data=j.handleObj.data;a.handleObj=j.handleObj;if(j.handleObj.origHandler.apply(j.elem,e)===false){b=false;break}}return b}}function pa(a,b){return"live."+(a&&a!=="*"?a+".":"")+b.replace(\/\\.\/g,"`").replace(\/ \/g,$/;"	f
+function.qa	js/jquery.js	/^"&")}function qa(a){return!a||!a.parentNode||a.parentNode.nodeType===11}function ra(a,b){var d=0;b.each(function(){if(this.nodeName===(a[d]&&a[d].nodeName)){var f=c.data(a[d++]),e=c.data(this,f);if(f=f&&f.events){delete e.handle;e.events={};for(var j in f)for(var i in f[j])c.event.add(this,j,f[j][i],f[j][i].data)}}})}function sa(a,b,d){var f,e,j;b=b&&b[0]?b[0].ownerDocument||b[0]:s;if(a.length===1&&typeof a[0]==="string"&&a[0].length<512&&b===s&&!ta.test(a[0])&&(c.support.checkClone||!ua.test(a[0]))){e=$/;"	f
+getCrumb	function.php	/^	public static function getCrumb(){$/;"	f
+getPageName	function.php	/^	public static function getPageName() {$/;"	f
+header	function.php	/^	public static function header(){$/;"	f
+leng	function.php	/^		$leng = 7;$/;"	v
+listView	function.php	/^	public static function listView($leng=20){$/;"	f
+menu	function.php	/^		$menu = $item = '';$/;"	v
+na	js/jquery.js	/^e(a[0],b):w}function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget);n=0;for(r=$/;"	f
+oa	js/jquery.js	/^e(a[0],b):w}function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget);n=0;for(r=$/;"	f
+onload	frame.php	/^			window.onload = function(){$/;"	j
+opt	function.php	/^		$opt = '<div class="action"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,<\/a> <a href="#J_sel_del" class="J_batch_del">删除已选<\/a><\/span>'.$searchform.'<\/div>';$/;"	v
+page	function.php	/^		$page = '<div class="tfoot"><span class="batch"><a class="J_batch" href="#J_sel_all">全选,<\/a> <a href="#J_sel_del" class="J_batch_del">删除已选<\/a><\/span><div class="page-num"><span class="prev">上页<\/span><span class="current">2<\/span><a href="#1">1<\/a><a href="#3">3<\/a><a href="#4">4<\/a><a href="#5">5<\/a><span class="abbr">...<\/span><a class="next">下页<\/a><\/div><\/div>';$/;"	v
+pageForm	function.php	/^	public static function pageForm(){$/;"	f
+pageList	function.php	/^	public function pageList() {$/;"	f
+prefix	function.php	/^				$prefix = ' class="actived"';$/;"	v
+prefix	function.php	/^				$prefix = ' class="hidden"';$/;"	v
+qa.K	js/jquery.js	/^true;if(j=c.fragments[a[0]])if(j!==1)f=j}if(!f){f=b.createDocumentFragment();c.clean(a,b,f,d)}if(e)c.fragments[a[0]]=j?f:1;return{fragment:f,cacheable:e}}function K(a,b){var d={};c.each(va.concat.apply([],va.slice(0,b)),function(){d[this]=a});return d}function wa(a){return"scrollTo"in a&&a.document?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var c=function(a,b){return new c.fn.init(a,b)},Ra=A.jQuery,Sa=A.$,s=A.document,T,Ta=\/^[^<]*(<[\\w\\W]+>)[^>]*$|^#([\\w-]+)$\/,Ua=\/^.[^:#\\[\\.,]*$\/,Va=\/\\S\/,$/;"	f
+qa.ra	js/jquery.js	/^"&")}function qa(a){return!a||!a.parentNode||a.parentNode.nodeType===11}function ra(a,b){var d=0;b.each(function(){if(this.nodeName===(a[d]&&a[d].nodeName)){var f=c.data(a[d++]),e=c.data(this,f);if(f=f&&f.events){delete e.handle;e.events={};for(var j in f)for(var i in f[j])c.event.add(this,j,f[j][i],f[j][i].data)}}})}function sa(a,b,d){var f,e,j;b=b&&b[0]?b[0].ownerDocument||b[0]:s;if(a.length===1&&typeof a[0]==="string"&&a[0].length<512&&b===s&&!ta.test(a[0])&&(c.support.checkClone||!ua.test(a[0]))){e=$/;"	f
+qa.sa	js/jquery.js	/^"&")}function qa(a){return!a||!a.parentNode||a.parentNode.nodeType===11}function ra(a,b){var d=0;b.each(function(){if(this.nodeName===(a[d]&&a[d].nodeName)){var f=c.data(a[d++]),e=c.data(this,f);if(f=f&&f.events){delete e.handle;e.events={};for(var j in f)for(var i in f[j])c.event.add(this,j,f[j][i],f[j][i].data)}}})}function sa(a,b,d){var f,e,j;b=b&&b[0]?b[0].ownerDocument||b[0]:s;if(a.length===1&&typeof a[0]==="string"&&a[0].length<512&&b===s&&!ta.test(a[0])&&(c.support.checkClone||!ua.test(a[0]))){e=$/;"	f
+qa.wa	js/jquery.js	/^true;if(j=c.fragments[a[0]])if(j!==1)f=j}if(!f){f=b.createDocumentFragment();c.clean(a,b,f,d)}if(e)c.fragments[a[0]]=j?f:1;return{fragment:f,cacheable:e}}function K(a,b){var d={};c.each(va.concat.apply([],va.slice(0,b)),function(){d[this]=a});return d}function wa(a){return"scrollTo"in a&&a.document?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var c=function(a,b){return new c.fn.init(a,b)},Ra=A.jQuery,Sa=A.$,s=A.document,T,Ta=\/^[^<]*(<[\\w\\W]+>)[^>]*$|^#([\\w-]+)$\/,Ua=\/^.[^:#\\[\\.,]*$\/,Va=\/\\S\/,$/;"	f
+required	function.php	/^					$required = ' required';$/;"	v
+ret	function.php	/^		$ret = '$/;"	v
+ret	function.php	/^		$ret = '<dl id="side">'.$menu.'<\/dl>';$/;"	v
+ret	function.php	/^		$ret = '<form>'.$formContent.'<p><label>内容<\/label><textarea class="ta"><\/textarea><\/p><p class="act"><button type="submit">确认<\/button><button type="cancel">取消<\/button><\/p><\/form>';$/;"	v
+ret	function.php	/^		$ret=$opt.'<table class="nt sample-list">'.$thead.$tbody.'<\/table>';$/;"	v
+searchform	function.php	/^		$searchform = '<form class="search"><span>另一个输入框: <input type="text" \/><\/span><span>选择: <select><option value="b">b<\/option><option value="a">a<\/option><\/select><\/span><span><input type="text" placeholder="可以搜索标题, id, 描述" \/><button type="submit">搜索<\/button><\/span><\/form>';$/;"	v
+sidebar	function.php	/^	public static function sidebar($leng = 6){$/;"	f
+simpleForm	function.php	/^	public static function simpleForm(){$/;"	f
+tbody	function.php	/^		$tbody = '';$/;"	v
+thead	function.php	/^		$thead = '<thead><tr><th class="sel no-border"><\/td><th class="id">id<\/th><th>描述<\/th><th class="opt">操作<\/th><\/tr><\/thead>';$/;"	v
+type	function.php	/^					$type = 'date';$/;"	v
+type	function.php	/^					$type = 'email';$/;"	v
+type	function.php	/^					$type = 'number';$/;"	v
+type	function.php	/^					$type = 'password';$/;"	v
+type	function.php	/^					$type = 'range" min="1" max="10"';$/;"	v
+type	function.php	/^					$type = 'tel';$/;"	v
+type	function.php	/^					$type = 'text';$/;"	v
+type	function.php	/^			$type = $required = $autofocus = '';$/;"	v
+util	function.php	/^class util {$/;"	c
+util.batch	js/util.js	/^    }$/;"	f
+wa.c	js/jquery.js	/^true;if(j=c.fragments[a[0]])if(j!==1)f=j}if(!f){f=b.createDocumentFragment();c.clean(a,b,f,d)}if(e)c.fragments[a[0]]=j?f:1;return{fragment:f,cacheable:e}}function K(a,b){var d={};c.each(va.concat.apply([],va.slice(0,b)),function(){d[this]=a});return d}function wa(a){return"scrollTo"in a&&a.document?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var c=function(a,b){return new c.fn.init(a,b)},Ra=A.jQuery,Sa=A.$,s=A.document,T,Ta=\/^[^<]*(<[\\w\\W]+>)[^>]*$|^#([\\w-]+)$\/,Ua=\/^.[^:#\\[\\.,]*$\/,Va=\/\\S\/,$/;"	f
+window.onload	frame.php	/^			window.onload = function(){$/;"	j

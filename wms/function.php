@@ -105,11 +105,29 @@ class TPL {
 		$ret=$opt.'<table class="nt sample-list">'.$thead.$tbody.'</table>';
 		echo $ret.$page;
 	}
-	public function pageList()
-	{
+	public function pageList() {
 		TPL::getCrumb();
 		echo '<div class="box"><div class="bd">';
 		TPL::listView();
 		echo '</div></div>';
 	}
+	public function detail() {
+		TPL::getCrumb();
+		$tb = '<table class="nt"> 
+			<thead><tr><th>产品编号</th><th>产品名称</th><th>预入库数量</th><th>操作</th></tr></thead>
+			<tbody id="tbb">
+				<tr><td><input type="hidden" id="xh" value="1" size="5" readonly="readonly"><input type="hidden" name="prid" size="12" readonly="readonly" value="1"><input type="hidden"> id </td><td>name</td><td>number</td><td><span onclick="show();"><img src="/img/histroy-add.png"></span>&nbsp; <span onclick="delLine(this);"><img src="/img/histroy-rm.png"></span><input id="sub" type="hidden" name="kcun" value="10001"></td></tr>
+				<tr><td><input type="hidden" id="xh" value="1" size="5" readonly="readonly"><input type="hidden" name="prid" size="12" readonly="readonly" value="1"><input type="hidden"> id </td><td>name</td><td>number</td><td><span onclick="show();"><img src="/img/histroy-add.png"></span>&nbsp; <span onclick="delLine(this);"><img src="/img/histroy-rm.png"></span><input id="sub" type="hidden" name="kcun" value="10001"></td></tr>
+				<tr><td><input type="hidden" id="xh" value="1" size="5" readonly="readonly"><input type="hidden" name="prid" size="12" readonly="readonly" value="1"><input type="hidden"> id </td><td>name</td><td>number</td><td><span onclick="show();"><img src="/img/histroy-add.png"></span>&nbsp; <span onclick="delLine(this);"><img src="/img/histroy-rm.png"></span><input id="sub" type="hidden" name="kcun" value="10001"></td></tr>
+			</tbody> </table> ';
+		echo '<div class="box">
+			<div class="hd">标题为了详情示例</div>
+			<div class="bd">
+				<p><span class="label">描述:</span>哈哈哈</p>
+				<p><span class="label">描述:</span>哈哈哈</p>
+				<div class="p"><span class="label">表格描述:</span>'.$tb.'</div>
+			</div>
+		</div>';
+	}
 }
+
